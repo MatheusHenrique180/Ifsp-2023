@@ -1,0 +1,193 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-style: italic;
+    color:gold;
+    text-align: center;
+}
+
+h2{
+    text-decoration: underline;
+    color: lime;
+    font-style: italic;
+}
+
+h3 {
+    text-decoration: underline;
+    color: darkblue;
+    font-style: italic;
+}
+
+h4 {
+    text-decoration: underline;
+    font-style: italic;
+    color: darkred;
+}
+
+h5{
+    text-decoration: underline;
+    color: white;
+    font-style: italic;
+}
+
+body{ 
+    margin: 0;
+    background-image: url(imagens/fundo2.png);
+    color: black;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+figcaption{
+    color: white;
+}
+
+.cabecalho{
+    
+}
+
+.menu{
+    width: 100%;
+    background-color: #900a34ec;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.menu a{
+    float: left;
+    text-align: center;
+    padding: 12px 10px;
+    color: #350515;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.menu a:hover{
+    color: #f1f1f1;
+    background-color: #540820;
+    border-bottom: 3px solid red;
+}
+.menu a.active {
+    background-color: #540820;
+    color: white;
+    border-bottom: 3px solid #540820;
+  }
+
+.menu-direito{
+    float:right;
+    font-size: 20px;
+    text-decoration: dotted;
+}
+
+.menu-direito a{
+    color: white;
+}
+
+.conteudo{
+    padding: 0px 10px;
+        border: solid 1px #000000ab;
+    border-radius: 10px;
+	background-color: #26a04bd6;
+    font-size: 18px;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.coluna {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.coluna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.img-esquerda{
+    float: left;
+    margin-right: 10px;
+}
+
+.img-direita{
+    float: right;
+    margin-right: 10px;
+}
+
+.img-meio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.rodape{
+    padding: 0px 10px;
+        border: solid 1px #555;
+	background-color: #a02626d6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .menu a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .menu-direito{
+        float:none
+    }
+
+    .conteudo {
+        flex-wrap: wrap;
+        background-color: #26a04bd6;
+        border-bottom: 1px dotted;        
+        margin-top: 20px;       
+    }
+
+    .rodape {
+        text-align: center;
+        background-color: #a02626d6;
+    }
+
+    .img-esquerda{
+        width: 40cm;
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .img-direita{
+        width: 40cm;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .img-meio{
+        width: 40cm;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .coluna {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
